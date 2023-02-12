@@ -1,0 +1,6 @@
+dist
+node_modules
+
+# jest-junit and jest coverage
+reports
+junit.xml

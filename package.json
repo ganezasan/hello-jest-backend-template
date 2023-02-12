@@ -1,0 +1,45 @@
+{
+  "name": "hello-jest-backend-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": "18.14.0",
+    "npm": "9.3.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src",
+    "test": "jest",
+    "prepare": "husky install",
+    "format": "prettier -l src",
+    "lint-staged": "lint-staged --allow-empty"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "jest": "^29.4.1",
+    "jest-junit": "^15.0.0",
+    "lint-staged": "^13.1.1",
+    "prettier": "2.8.4",
+    "puppeteer": "^19.6.3",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint",
+      "prettier --write"
+    ]
+  }
+}
